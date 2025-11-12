@@ -1,0 +1,63 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family:"Segoe UI', Tahoma, Geneva, Verdana, sans-serif"
+}
+
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {
+    width: 120px;
+    background: #ff8819;
+    padding-top: 15%;
+}
+
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {
+    margin-left: 120px
+}
+
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-left: 0
+    }
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5px;
+    background-color: #404040;
+}
+
+.grid-container > div {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 1.5em;
+}
+
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(113, 119, 133, 0.474);
+  }
+
+.flex-container > div {
+    background-color: #f1f1f100;
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%; 
+    text-align: center;
+    line-height: 2rem;
+    font-size: 1rem;
+  }
